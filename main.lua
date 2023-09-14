@@ -48,7 +48,7 @@ function RandomCodeGenerator(brackets: boolean?)
 
 	local task1 = {}
 
-	for i,v in t do
+	for i,v in pairs(t) do
 
 		local charTable = RandomCharTable()
 
@@ -57,7 +57,7 @@ function RandomCodeGenerator(brackets: boolean?)
 
 	local task2 = {}
 
-	for i,v in u do
+	for i,v in pairs(u) do
 		local charTable = RandomCharTable()
 
 		table.insert(task2, string.sub(charTable, math.floor(v * 1.5) % #charTable, math.floor(v * 1.5) % #charTable))
